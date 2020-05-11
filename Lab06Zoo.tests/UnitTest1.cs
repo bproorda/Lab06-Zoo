@@ -40,10 +40,14 @@ namespace Lab06Zoo.tests
         {
             //Arrange
             Animal Jazz = new Wolf();
-            string expected = "I love to howl! owOOOOO! ";
+            string expected = "ooowOOOOOOO!";
 
             //Act
+            //string result = Jazz.Howl();
+            string result = Wolf.Howl();
 
+            //Act
+            Assert.Equal(expected, result);
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab06Zoo
 {
-    public abstract class Animal
+    public abstract partial class Animal
     {
         //properties
         public abstract string WhatKind { get; }
@@ -21,7 +21,6 @@ namespace Lab06Zoo
         {
             return "ZZZZZZZ";
         }
-
 
     }
 }

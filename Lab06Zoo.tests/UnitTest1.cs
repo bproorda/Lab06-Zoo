@@ -28,8 +28,7 @@ namespace Lab06Zoo.tests
             string expected = "Just keep swimming...";
 
             //act
-            //Couldn't use bob.Swim, but had to use Fish.Swim()?
-            string result = Fish.Swim();
+            string result = bob.Swim();
 
             //Assert
             Assert.Equal(expected, result);
@@ -39,12 +38,13 @@ namespace Lab06Zoo.tests
         public void What_Does_Wolf_Do()
         {
             //Arrange
-            Animal Jazz = new Wolf();
+            //Animal Jazz = new Wolf();
+            Wolf Jazz = new Wolf();
             string expected = "ooowOOOOOOO!";
 
             //Act
-            //string result = Jazz.Howl();
-            string result = Wolf.Howl();
+            string result = Jazz.Howl();
+            //string result = Wolf.Howl();
 
             //Act
             Assert.Equal(expected, result);

@@ -7,7 +7,7 @@ namespace Lab06Zoo
         public override string WhatKind => "Fish";
 
         //concrete
-        public static string Swim()
+        public string Swim()
         {
             return "Just keep swimming...";
         }

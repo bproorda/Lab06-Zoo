@@ -14,7 +14,7 @@
         {
             return "Woof!";
         }
-        public static string Howl()
+        public  string Howl()
         {
             return "ooowOOOOOOO!";
         }

@@ -7,7 +7,7 @@ namespace Lab06Zoo.tests
     {
         
         [Fact]
-        public void WhatSoundDoesSturgeonMake()
+        public void WhatSoundDoesSturgeonMakeTest()
         {
             //arrange
             Animal steve = new LakeSturgeon();
@@ -21,7 +21,7 @@ namespace Lab06Zoo.tests
 
         }
         [Fact]
-        public void Fish_Sturgeon_Can_Swim()
+        public void Fish_Sturgeon_Can_Swim_Test()
         {
             //arrange
             Fish bob = new LakeSturgeon();
@@ -36,7 +36,7 @@ namespace Lab06Zoo.tests
 
         }
         [Fact]
-        public void What_Does_Wolf_Do()
+        public void What_Does_Wolf_Do_Test()
         {
             //Arrange
             //Animal Jazz = new Wolf();
@@ -55,6 +55,20 @@ namespace Lab06Zoo.tests
 
             //Act
             Assert.Equal(expected2, wolfLegsNumber);
+        }
+
+        [Fact]
+        public void When_Does_Otter_Sleep_Test()
+        {
+            //arrange
+            Animal Graeme = new RiverOtter();
+            string expected = "I sleep during the day in summer and night in the winter!";
+
+            //act
+            string result = Graeme.Sleep();
+
+            //assert
+            Assert.Equal(expected, result);
         }
     }
 }

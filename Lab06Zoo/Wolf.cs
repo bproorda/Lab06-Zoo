@@ -18,5 +18,10 @@
         {
             return "ooowOOOOOOO!";
         }
+
+        public override string Sleep()
+        {
+            return "I sleep during the day and hunt at night.";
+        }
     }
 }

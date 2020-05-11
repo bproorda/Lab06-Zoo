@@ -5,6 +5,7 @@ namespace Lab06Zoo.tests
 {
     public class UnitTest1
     {
+        
         [Fact]
         public void WhatSoundDoesSturgeonMake()
         {
@@ -34,6 +35,15 @@ namespace Lab06Zoo.tests
             Assert.Equal(expected, result);
 
         }
-      
+        [Fact]
+        public void What_Does_Wolf_Do()
+        {
+            //Arrange
+            Animal Jazz = new Wolf();
+            string expected = "I love to howl! owOOOOO! ";
+
+            //Act
+
+        }
     }
 }

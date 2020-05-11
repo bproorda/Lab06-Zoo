@@ -29,6 +29,7 @@ namespace Lab06Zoo.tests
 
             //act
             string result = bob.Swim();
+            
 
             //Assert
             Assert.Equal(expected, result);
@@ -41,13 +42,19 @@ namespace Lab06Zoo.tests
             //Animal Jazz = new Wolf();
             Wolf Jazz = new Wolf();
             string expected = "ooowOOOOOOO!";
+            int expected2 = 4;
+            
 
             //Act
             string result = Jazz.Howl();
+            int wolfLegsNumber = Jazz.NumberOfLegs;
             //string result = Wolf.Howl();
 
             //Act
             Assert.Equal(expected, result);
+
+            //Act
+            Assert.Equal(expected2, wolfLegsNumber);
         }
     }
 }

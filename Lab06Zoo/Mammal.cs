@@ -6,4 +6,5 @@
         {
             public override string WhatKind => "Mammal";
         }
+
 }

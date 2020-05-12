@@ -83,5 +83,20 @@ namespace Lab06Zoo.tests
             //Assert
             Assert.True(result);
         }
+
+        [Fact]
+        public void What_Kind_Is_Loon()
+        {
+            //arrange 
+            Animal Gena = new Loon();
+            string expected = "Bird";
+
+            //act
+            string result = Gena.WhatKind;
+
+            //assert
+            Assert.Equal(expected, result);
+
+        }
     }
 }

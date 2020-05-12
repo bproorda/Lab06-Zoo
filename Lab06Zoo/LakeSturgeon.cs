@@ -21,4 +21,6 @@ namespace Lab06Zoo
             return "I never sleep!";
         }
     }
+
+
 }

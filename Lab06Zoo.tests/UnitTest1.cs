@@ -70,5 +70,18 @@ namespace Lab06Zoo.tests
             //assert
             Assert.Equal(expected, result);
         }
+
+        [Fact]
+        public void Can_Owl_Fly()
+        {
+            //arrange
+            Bird Mary = new GreatHornedOwl();
+
+            //act
+            bool result = Mary.CanThisAnimalFly;
+
+            //Assert
+            Assert.True(result);
+        }
     }
 }

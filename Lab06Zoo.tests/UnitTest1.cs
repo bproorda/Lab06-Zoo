@@ -71,18 +71,6 @@ namespace Lab06Zoo.tests
             Assert.Equal(expected, result);
         }
 
-        [Fact]
-        public void Can_Owl_Fly()
-        {
-            //arrange
-            Bird Mary = new GreatHornedOwl();
-
-            //act
-            bool result = Mary.CanThisAnimalFly;
-
-            //Assert
-            Assert.True(result);
-        }
 
         [Fact]
         public void What_Kind_Is_Loon()
@@ -111,6 +99,20 @@ namespace Lab06Zoo.tests
             //assert
             Assert.True(actual);
                
+        }
+        [Fact]
+        public void Different_Animals_Different_Food_Test()
+        {
+            //arrange
+            Animal Jerry = new Wolf();
+            Animal Bill = new LakeSturgeon();
+
+            //act
+            string wolfEats = Jerry.Eat();
+            string sturgeonEats = Bill.Eat();
+
+            //Assert
+            Assert.NotEqual(wolfEats, sturgeonEats);
         }
     }
 }

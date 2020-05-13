@@ -116,10 +116,11 @@ namespace Lab06Zoo.tests
         }
 
         [Fact]
-        public void Owl_Is_An_Animal_Test()
+        public void Owl_Is_An_Owl_Test()
         {
             //arrange 
             Animal phil = new GreatHornedOwl();
+            
 
             //act
             var philType = phil.GetType();
@@ -127,6 +128,16 @@ namespace Lab06Zoo.tests
 
             //asssert
             Assert.True(actual);
+        }
+        [Fact]
+        public void Owl_Is_An_Animal_Test()
+        {
+            //arrange 
+            Animal phil = new GreatHornedOwl();
+       
+
+            //asssert
+            Assert.True(phil is Animal);
         }
     }
 }

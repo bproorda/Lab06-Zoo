@@ -1,8 +1,10 @@
 ﻿namespace Lab06Zoo
 {
-    public class Bat : Mammal, ICanFLyLikeAnEagle
+    public class Bat : Mammal, ICanFLyLikeAnEagle, Hobby
     {
         public override int Weight => 1;
+
+        public string MyHobby => "Hanging out";
 
         public bool CanFly()
         {
@@ -12,6 +14,11 @@
         public override string Eat()
         {
             return "I love to eat bugs as I fly through the air!";
+        }
+
+        public string GetMyHobby()
+        {
+            return MyHobby;
         }
 
         public override string MakeSound()

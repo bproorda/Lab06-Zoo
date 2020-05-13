@@ -20,5 +20,9 @@
         {
             return "Not even going to try this one: https://www.cornell.edu/video/understanding-loons-6-vocalizations";
         }
+        public Loon(string animalName) : base(animalName)
+        {
+
+        }
     }
 }

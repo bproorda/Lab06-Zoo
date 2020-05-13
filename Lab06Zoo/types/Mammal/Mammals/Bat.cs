@@ -30,6 +30,10 @@
         {
             return "I like to hide in caves and other dark places during the day";
         }
+        public Bat(string animalName) : base(animalName)
+        {
+
+        }
     }
     
 

@@ -10,7 +10,7 @@ namespace Lab06Zoo.tests
         public void WhatSoundDoesSturgeonMakeTest()
         {
             //arrange
-            Animal steve = new LakeSturgeon();
+            Animal steve = new LakeSturgeon("steve");
             string expected = "I can make low-frequence 'sturgeon thunder'!";
 
             //act
@@ -24,7 +24,7 @@ namespace Lab06Zoo.tests
         public void Fish_Sturgeon_Can_Swim_Test()
         {
             //arrange
-            Fish bob = new LakeSturgeon();
+            Fish bob = new LakeSturgeon("bob");
             string expected = "Just keep swimming...";
 
             //act
@@ -40,7 +40,7 @@ namespace Lab06Zoo.tests
         {
             //Arrange
             //Animal Jazz = new Wolf();
-            Wolf Jazz = new Wolf();
+            Wolf Jazz = new Wolf("Jazz");
             string expected = "ooowOOOOOOO!";
             int expected2 = 4;
             
@@ -61,7 +61,7 @@ namespace Lab06Zoo.tests
         public void When_Does_Otter_Sleep_Test()
         {
             //arrange
-            Animal Graeme = new RiverOtter();
+            Animal Graeme = new RiverOtter("Graeme");
             string expected = "I sleep during the day in summer and night in the winter!";
 
             //act
@@ -76,7 +76,7 @@ namespace Lab06Zoo.tests
         public void What_Kind_Is_Loon()
         {
             //arrange 
-            Animal Gena = new Loon();
+            Animal Gena = new Loon("Gena");
             string expected = "Bird";
 
             //act
@@ -91,7 +91,7 @@ namespace Lab06Zoo.tests
         public void Can_Bats_Fly_Test()
         {
             //arrange
-            Bat Grant = new Bat();
+            Bat Grant = new Bat("Grant");
 
             //act
             bool actual = Grant.CanFly();
@@ -104,8 +104,8 @@ namespace Lab06Zoo.tests
         public void Different_Animals_Different_Food_Test()
         {
             //arrange
-            Animal Jerry = new Wolf();
-            Animal Bill = new LakeSturgeon();
+            Animal Jerry = new Wolf("Jerry");
+            Animal Bill = new LakeSturgeon("Bill");
 
             //act
             string wolfEats = Jerry.Eat();
@@ -119,7 +119,7 @@ namespace Lab06Zoo.tests
         public void Owl_Is_An_Owl_Test()
         {
             //arrange 
-            Animal phil = new GreatHornedOwl();
+            Animal phil = new GreatHornedOwl("phil");
             
 
             //act
@@ -133,7 +133,7 @@ namespace Lab06Zoo.tests
         public void Owl_Is_An_Animal_Test()
         {
             //arrange 
-            Animal phil = new GreatHornedOwl();
+            Animal phil = new GreatHornedOwl("phil");
        
 
             //asssert

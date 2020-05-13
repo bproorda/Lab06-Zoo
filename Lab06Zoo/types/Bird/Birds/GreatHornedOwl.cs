@@ -8,6 +8,8 @@
 
         public string MyHobby => "listening to The WHO";
 
+        
+
         public bool CanFly()
         {
             return true;
@@ -30,6 +32,10 @@
         public override string Sleep()
         {
             return "I sleep mostly during the day";
+        }
+        public GreatHornedOwl(string animalName) : base(animalName)
+        {
+
         }
     }
 }

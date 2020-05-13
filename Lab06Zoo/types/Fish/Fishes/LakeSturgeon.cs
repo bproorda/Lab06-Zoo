@@ -8,7 +8,7 @@ namespace Lab06Zoo
 
         public override string Eat()
         {
-           return "I eat worms, larvae, and leeches";
+            return "I eat worms, larvae, and leeches";
         }
 
         public override string MakeSound()
@@ -16,10 +16,15 @@ namespace Lab06Zoo
             return "I can make low-frequence 'sturgeon thunder'!";
         }
 
-        public override string  Sleep()
+        public override string Sleep()
         {
             return "I never sleep!";
         }
+
+        public LakeSturgeon(string animalName) : base(animalName)
+            {
+
+                }
     }
 
 

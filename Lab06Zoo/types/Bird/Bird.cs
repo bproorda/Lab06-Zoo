@@ -7,6 +7,9 @@
 
         public override int NumberOfLegs => 2;
 
-      
+        public Bird(string animalName) : base(animalName)
+        {
+
+        }
     }
 }

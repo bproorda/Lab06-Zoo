@@ -30,5 +30,10 @@
         {
             return MyHobby; ;
         }
+
+        public Wolf(string animalName) : base(animalName)
+        {
+
+        }
     }
 }

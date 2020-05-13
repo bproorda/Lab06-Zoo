@@ -25,6 +25,10 @@
         {
             return "Do you know Go Fish?";
         }
+        public RiverOtter(string animalName) : base(animalName)
+        {
+
+        }
     }
 
 }

@@ -98,5 +98,19 @@ namespace Lab06Zoo.tests
             Assert.Equal(expected, result);
 
         }
+
+        [Fact]
+        public void Can_Bats_Fly_Test()
+        {
+            //arrange
+            Bat Grant = new Bat();
+
+            //act
+            bool actual = Grant.CanFly();
+
+            //assert
+            Assert.True(actual);
+               
+        }
     }
 }

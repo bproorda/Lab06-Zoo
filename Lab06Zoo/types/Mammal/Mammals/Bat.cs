@@ -1,8 +1,13 @@
 ﻿namespace Lab06Zoo
 {
-    public class Bat : Mammal
+    public class Bat : Mammal, ICanFLyLikeAnEagle
     {
         public override int Weight => 1;
+
+        public bool CanFly()
+        {
+            return true;
+        }
 
         public override string Eat()
         {
@@ -16,7 +21,7 @@
 
         public override string Sleep()
         {
-            return "I like to hide in caves and other dark places during the day;"
+            return "I like to hide in caves and other dark places during the day";
         }
     }
     

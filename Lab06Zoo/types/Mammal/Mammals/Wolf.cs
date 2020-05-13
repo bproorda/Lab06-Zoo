@@ -1,9 +1,11 @@
 ﻿namespace Lab06Zoo
 {
-    public class Wolf : Mammal
+    public class Wolf : Mammal, Hobby
     {
         public override int Weight => 180;
         public override int NumberOfLegs => 4;
+
+        public string MyHobby => "Cruisin' with my Pack";
 
         public override string Eat()
         {
@@ -22,6 +24,16 @@
         public override string Sleep()
         {
             return "I sleep during the day and hunt at night.";
+        }
+
+        public string GetMyHobby()
+        {
+            return MyHobby; ;
+        }
+
+        public Wolf(string animalName) : base(animalName)
+        {
+
         }
     }
 }

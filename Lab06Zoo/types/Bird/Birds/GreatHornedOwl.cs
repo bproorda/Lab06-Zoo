@@ -1,14 +1,28 @@
 ﻿namespace Lab06Zoo
 {
-    public class GreatHornedOwl : Bird
+    public class GreatHornedOwl : Bird, ICanFLyLikeAnEagle, Hobby
     {
-        public override bool CanThisAnimalFly => true;
+       
 
         public override int Weight => 3;
+
+        public string MyHobby => "listening to The WHO";
+
+        
+
+        public bool CanFly()
+        {
+            return true;
+        }
 
         public override string Eat()
         {
             return "I eat rodents, hares, and squirrels";
+        }
+
+        public string GetMyHobby()
+        {
+            return MyHobby;
         }
 
         public override string MakeSound()
@@ -18,6 +32,10 @@
         public override string Sleep()
         {
             return "I sleep mostly during the day";
+        }
+        public GreatHornedOwl(string animalName) : base(animalName)
+        {
+
         }
     }
 }

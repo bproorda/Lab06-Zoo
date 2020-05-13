@@ -1,10 +1,15 @@
 ﻿namespace Lab06Zoo
 {
-    public class Loon : Bird
+    public class Loon : Bird, ICanFLyLikeAnEagle
     {
-        public override bool CanThisAnimalFly => true;
+        
 
         public override int Weight => 4;
+
+        public bool CanFly()
+        {
+            return true;
+        }
 
         public override string Eat()
         {
@@ -14,6 +19,10 @@
         public override string MakeSound()
         {
             return "Not even going to try this one: https://www.cornell.edu/video/understanding-loons-6-vocalizations";
+        }
+        public Loon(string animalName) : base(animalName)
+        {
+
         }
     }
 }

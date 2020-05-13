@@ -10,7 +10,7 @@ namespace Lab06Zoo.tests
         public void WhatSoundDoesSturgeonMakeTest()
         {
             //arrange
-            Animal steve = new LakeSturgeon();
+            Animal steve = new LakeSturgeon("steve");
             string expected = "I can make low-frequence 'sturgeon thunder'!";
 
             //act
@@ -24,7 +24,7 @@ namespace Lab06Zoo.tests
         public void Fish_Sturgeon_Can_Swim_Test()
         {
             //arrange
-            Fish bob = new LakeSturgeon();
+            Fish bob = new LakeSturgeon("bob");
             string expected = "Just keep swimming...";
 
             //act
@@ -40,7 +40,7 @@ namespace Lab06Zoo.tests
         {
             //Arrange
             //Animal Jazz = new Wolf();
-            Wolf Jazz = new Wolf();
+            Wolf Jazz = new Wolf("Jazz");
             string expected = "ooowOOOOOOO!";
             int expected2 = 4;
             
@@ -61,7 +61,7 @@ namespace Lab06Zoo.tests
         public void When_Does_Otter_Sleep_Test()
         {
             //arrange
-            Animal Graeme = new RiverOtter();
+            Animal Graeme = new RiverOtter("Graeme");
             string expected = "I sleep during the day in summer and night in the winter!";
 
             //act
@@ -71,24 +71,12 @@ namespace Lab06Zoo.tests
             Assert.Equal(expected, result);
         }
 
-        [Fact]
-        public void Can_Owl_Fly()
-        {
-            //arrange
-            Bird Mary = new GreatHornedOwl();
-
-            //act
-            bool result = Mary.CanThisAnimalFly;
-
-            //Assert
-            Assert.True(result);
-        }
 
         [Fact]
         public void What_Kind_Is_Loon()
         {
             //arrange 
-            Animal Gena = new Loon();
+            Animal Gena = new Loon("Gena");
             string expected = "Bird";
 
             //act
@@ -97,6 +85,72 @@ namespace Lab06Zoo.tests
             //assert
             Assert.Equal(expected, result);
 
+        }
+
+        [Fact]
+        public void Can_Bats_Fly_Test()
+        {
+            //arrange
+            Bat Grant = new Bat("Grant");
+
+            //act
+            bool actual = Grant.CanFly();
+
+            //assert
+            Assert.True(actual);
+               
+        }
+        [Fact]
+        public void Different_Animals_Different_Food_Test()
+        {
+            //arrange
+            Animal Jerry = new Wolf("Jerry");
+            Animal Bill = new LakeSturgeon("Bill");
+
+            //act
+            string wolfEats = Jerry.Eat();
+            string sturgeonEats = Bill.Eat();
+
+            //Assert
+            Assert.NotEqual(wolfEats, sturgeonEats);
+        }
+
+        [Fact]
+        public void Owl_Is_An_Owl_Test()
+        {
+            //arrange 
+            Animal phil = new GreatHornedOwl("phil");
+            
+
+            //act
+            var philType = phil.GetType();
+            bool actual = philType.IsInstanceOfType(phil);
+
+            //asssert
+            Assert.True(actual);
+        }
+        [Fact]
+        public void Owl_Is_An_Animal_Test()
+        {
+            //arrange 
+            Animal phil = new GreatHornedOwl("phil");
+       
+
+            //asssert
+            Assert.True(phil is Animal);
+        }
+
+        [Fact]
+        public void Did_Constructor_Work_Test()
+        {
+            //arrange
+            Animal lloyd = new Bat("lloyd");
+
+            //act
+            string actual = lloyd.Name;
+
+            //assert
+            Assert.Equal("lloyd", actual);
         }
     }
 }

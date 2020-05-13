@@ -3,11 +3,12 @@ Building  a zoo in C# using classes and inheritance
 
 **Summary**
 - This application uses abstract classes with abstract and abstract/virtual method to populate a zoon with many different
-kinds of animals.
+kinds of animals. Aslo uses interfaces to provide common properties and methods to concrete classes that could not be 
+combined neatly in the classes, such as add CanFly() to Great Horned Owl and Bat
 
 **UML**
 
-![UML](Lab06ZooClasses.png)
+![UML](Lab06ZooClassesAndinterfaces.png)
 
 
 **OOP Principles**

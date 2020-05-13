@@ -11,5 +11,9 @@ namespace Lab06Zoo
         {
             return "Just keep swimming...";
         }
+       public Fish(string animalName) : base(animalName)
+        {
+
+        }
     }
 }

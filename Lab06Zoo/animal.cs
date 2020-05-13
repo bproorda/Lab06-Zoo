@@ -9,7 +9,9 @@ namespace Lab06Zoo
         //properties
         public abstract string WhatKind { get; }
         public abstract int Weight { get; }
+
         public virtual int NumberOfLegs { get; }
+
 
         //Methods
 
@@ -22,5 +24,17 @@ namespace Lab06Zoo
             return "ZZZZZZZ";
         }
 
+        //Base constructor
+        //Does this have to be a field?
+        public string Name;
+
+        public Animal(string animalName)
+        {
+            Name = animalName;
+        }
+
+
     }
+        
+
 }

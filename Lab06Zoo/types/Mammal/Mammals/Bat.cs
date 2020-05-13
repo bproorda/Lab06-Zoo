@@ -3,6 +3,7 @@
     public class Bat : Mammal, ICanFLyLikeAnEagle, Hobby
     {
         public override int Weight => 1;
+        public override int NumberOfLegs => 2;
 
         public string MyHobby => "Hanging out";
 

@@ -1,10 +1,15 @@
 ﻿namespace Lab06Zoo
 {
-    public class GreatHornedOwl : Bird
+    public class GreatHornedOwl : Bird, ICanFLyLikeAnEagle
     {
-        public override bool CanThisAnimalFly => true;
+       
 
         public override int Weight => 3;
+
+        public bool CanFly()
+        {
+            return true;
+        }
 
         public override string Eat()
         {

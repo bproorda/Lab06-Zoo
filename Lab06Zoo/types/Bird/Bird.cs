@@ -7,6 +7,6 @@
 
         public override int NumberOfLegs => 2;
 
-        public abstract bool CanThisAnimalFly { get; }
+      
     }
 }

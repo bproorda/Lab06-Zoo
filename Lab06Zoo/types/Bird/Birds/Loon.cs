@@ -1,10 +1,15 @@
 ﻿namespace Lab06Zoo
 {
-    public class Loon : Bird
+    public class Loon : Bird, ICanFLyLikeAnEagle
     {
-        public override bool CanThisAnimalFly => true;
+        
 
         public override int Weight => 4;
+
+        public bool CanFly()
+        {
+            return true;
+        }
 
         public override string Eat()
         {

@@ -139,5 +139,18 @@ namespace Lab06Zoo.tests
             //asssert
             Assert.True(phil is Animal);
         }
+
+        [Fact]
+        public void Did_Constructor_Work_Test()
+        {
+            //arrange
+            Animal lloyd = new Bat("lloyd");
+
+            //act
+            string actual = lloyd.Name;
+
+            //assert
+            Assert.Equal("lloyd", actual);
+        }
     }
 }

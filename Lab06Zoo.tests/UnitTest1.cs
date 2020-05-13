@@ -114,5 +114,19 @@ namespace Lab06Zoo.tests
             //Assert
             Assert.NotEqual(wolfEats, sturgeonEats);
         }
+
+        [Fact]
+        public void Owl_Is_An_Animal_Test()
+        {
+            //arrange 
+            Animal phil = new GreatHornedOwl();
+
+            //act
+            var philType = phil.GetType();
+            bool actual = philType.IsInstanceOfType(phil);
+
+            //asssert
+            Assert.True(actual);
+        }
     }
 }
